@@ -1,16 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import HomePage from './pages/homepage/homepage.component'
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import MainRouter from "./routers/main-router";
 
-function App() {
-
-
+const App = () => {
   return (
-    <div className="mainApp">
-      <HomePage /> 
+    <div className="app">
+      <Router>
+        <MainRouter />
+      </Router>
     </div>
   );
-}
-
+};
 
 export default App;
